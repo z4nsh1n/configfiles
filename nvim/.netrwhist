@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/zanshin/code/fsharp/get-prog-with-fsharp/src/Car'
+let g:netrw_dirhist_8='/home/zanshin/code/elm/src'
+let g:netrw_dirhist_7='/home/zanshin/.tmux'
+let g:netrw_dirhist_6='/home/zanshin/configfiles/tmux/tmux-themepack/powerline/default'
+let g:netrw_dirhist_5='/home/zanshin/configfiles/tmux/tmux-themepack/powerline'
+let g:netrw_dirhist_4='/home/zanshin/configfiles/tmux/tmux-themepack'
+let g:netrw_dirhist_3='/home/zanshin/configfiles/nvimbackup/config'
+let g:netrw_dirhist_2='/home/zanshin/configfiles/nvimbackup/config/plugins'
+let g:netrw_dirhist_1='/home/zanshin/configfiles/nvimbackup/config'

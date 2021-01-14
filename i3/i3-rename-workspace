@@ -1,0 +1,26 @@
+#!env python
+
+from i3ipc import Connection
+from sys import argv
+
+i3 = Connection()
+
+def current_workspace():
+    workspaces = i3.get_workspaces()
+    current = list(filter((lambda w: w.focused == True), workspaces))[0]
+    return current
+
+def  rename_workspace(curname, num, new_name):
+    i3.command("rename workspace %s to %s" %(curname, str(num) + " " + new_name))
+    pass
+
+def main(new_name):
+    workspace = current_workspace()
+    num = workspace.num
+    cur_name = workspace.name
+    rename_workspace(cur_name, num, new_name)
+
+if __name__ == "__main__":
+    if len(argv) > 1:
+        main(argv[1])
+

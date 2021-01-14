@@ -1,0 +1,116 @@
+{
+
+  "codeLens.enable": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+
+  "languageserver": {
+    "elmLS" : {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"]
+    },
+    "ocaml" : {
+      "command": "ocamllsp",
+      "filetypes": ["ocaml"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls","compile_commands.json", ".vim/", ".git/", ".hg/", ".ccls-root"],
+      "initializationOptions": {
+        "cache" : {
+          "directory": "/tmp/ccls-cache"
+        }
+      },
+      "shell": true
+    },
+    "bash": {
+      "command": "bash-language-server",
+      "filetypes": ["sh"],
+      "args": ["start"],
+      "ignoredRootPaths": ["~"]
+    },
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+
+      }
+    },
+    "haskell": {
+      "command":"haskell-language-server-wrapper",
+      "args":["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        ".hie-bios",
+        ".stack.yaml",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ]
+    }
+  },
+
+  "cSpell.showStatus": true,
+  "cSpellExt.enableDictionaries": [
+    "english",
+    "dutch",
+    "medical-terms"
+  ],
+  "cSpell.language": "en,nl",
+
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "du",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vim",
+    "yaml",
+    "yml"
+  ]
+}
+
