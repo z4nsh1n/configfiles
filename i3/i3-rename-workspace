@@ -11,7 +11,7 @@ def current_workspace():
     return current
 
 def  rename_workspace(curname, num, new_name):
-    i3.command("rename workspace %s to %s" %(curname, str(num) + " " + new_name))
+    i3.command('rename workspace "%s" to "%s"' %(curname, str(num) + " " + new_name))
     pass
 
 def main(new_name):
